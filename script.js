@@ -45,10 +45,34 @@ const books = [
   },
 ];
 
-const longBooks = books.filter((book) => book.pages > 300);
+// const longBooks = books.filter((book) => book.pages > 300);
 
-const longBooksTitles = longBooks.map((bookTitle) => bookTitle.title);
+// const longBooksTitles = longBooks.map((bookTitle) => bookTitle.title);
 
-for (let i = 0; i < longBooks.length; i++) {
-  console.log(longBooksTitles[i]);
-}
+// for (let i = 0; i < longBooks.length; i++) {
+//   console.log(longBooksTitles[i]);
+// }
+
+// -------------
+
+// const availableBooks = books.filter((book) => book.available === true);
+
+// // console.log(availableBooks);
+
+// const discountedBooks = availableBooks.map((book) => {
+//   const prezzoOriginale = parseFloat(book.price.replace("€", ""));
+//   const prezzoScontato = prezzoOriginale * 0.8;
+//   const prezzoFinale = prezzoScontato.toFixed(2) + "€";
+//   return { ...book, price: prezzoFinale };
+// });
+
+// console.log(discountedBooks);
+
+// const fullPricedBook = discountedBooks.find((Element) => {
+//   const prezzoNumero = parseFloat(Element.price.replace("€", ""));
+//   return Number.isInteger(prezzoNumero);
+// });
+
+// console.log(fullPricedBook);
+
+// -----------

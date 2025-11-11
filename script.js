@@ -76,3 +76,12 @@ const books = [
 // console.log(fullPricedBook);
 
 // -----------
+
+const authors = books.map((book) => book.author);
+authors.sort((a, b) => b.age - a.age);
+
+console.log(authors);
+
+const areAuthorsAdults = authors.every((author) => author.age > 18);
+
+console.log(areAuthorsAdults);

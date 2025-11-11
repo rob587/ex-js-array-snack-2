@@ -95,5 +95,7 @@ console.log(ages);
 const ageSum = ages.reduce((acc, numero) => {
   return acc + numero;
 }, 0);
-
 console.log(ageSum);
+
+const agesAvg = ageSum / ages.length;
+console.log(`L'età media degli autori è: ${agesAvg}`);

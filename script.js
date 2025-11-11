@@ -77,11 +77,23 @@ const books = [
 
 // -----------
 
-const authors = books.map((book) => book.author);
-authors.sort((a, b) => b.age - a.age);
+// const authors = books.map((book) => book.author);
+// authors.sort((a, b) => b.age - a.age);
 
-console.log(authors);
+// console.log(authors);
 
-const areAuthorsAdults = authors.every((author) => author.age > 18);
+// const areAuthorsAdults = authors.every((author) => author.age > 18);
 
-console.log(areAuthorsAdults);
+// console.log(areAuthorsAdults);
+
+// ------------------
+
+const ages = books.map((a) => a.author.age);
+
+console.log(ages);
+
+const ageSum = ages.reduce((acc, numero) => {
+  return acc + numero;
+}, 0);
+
+console.log(ageSum);
